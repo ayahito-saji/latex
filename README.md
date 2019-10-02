@@ -10,8 +10,13 @@
 ### はじめる
 Clone or Download -> Download ZIPからダウンロードする。
 解凍する。
-docker-compose.ymlがあるディレクトリ(ルートディレクトリ)で
+docker-compose.ymlがあるディレクトリ(ルートディレクトリ)で次のコマンドを実行する
 ```
-docker-compose up
+docker-compose up -d
 ```
 main.texを編集して保存すると自動でpdfが出力される。
+
+終了するときは下のコマンド
+```
+docker-compose down
+```
