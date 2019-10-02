@@ -1,0 +1,7 @@
+version: '2'
+services:
+  docker:
+    image: nontan18/texlive:1.0.0
+    command: latexmk --pvc ./main.tex
+    volumes:
+      - .:/root/work
