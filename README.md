@@ -7,7 +7,7 @@
 ### mac
 [DockerをMacにインストールする方法](https://upd.world/docker-install-mac/)
 
-### はじめる
+## はじめる
 Clone or Download -> Download ZIPからダウンロードする。
 解凍する。
 docker-compose.ymlがあるディレクトリ(ルートディレクトリ)で次のコマンドを実行する
