@@ -1,34 +1,21 @@
-\documentclass[twocolumn, a4j]{article}
-\usepackage{multirow}
-\usepackage{amsmath,amssymb}
-\usepackage[T1]{fontenc}
-
-\title{サンプル用のTexファイル}
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
-\author{山田太郎 yamada.taro@sample.ac.jp}
-\renewcommand{\thefootnote}{\arabic{footnote}}
-\date{\today}
+\documentclass[uplatex]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{listings}
+\lstset{
+  breaklines=true
+}
 
 \begin{document}
+  \tableofcontents
 
-\twocolumn[
-\begin{@twocolumnfalse}
-  \maketitle
-  \vspace{2mm}
-\end{@twocolumnfalse}
-]
+  \clearpage
 
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
-\footnotetext[2]{Sample Univ}
-\renewcommand{\thefootnote}{\arabic{footnote}}
-
-\section{はじめに}
-
-  　hoge hoge hoge hoge
-
-\renewcommand{\refname}{参考文献}
-\begin{thebibliography}{数字}
-  \bibitem[opt]{key} 文献情報
-\end{thebibliography}
+  \section{はじめに}
+  \addcontentsline{toc}{section}{参考文献}
+  \begin{thebibliography}{9}
+    \bibitem{key1} すばらしい本1
+    \bibitem{key2} すばらしい本2
+    \bibitem{key3} すばらしい本3
+  \end{thebibliography}
 
 \end{document}

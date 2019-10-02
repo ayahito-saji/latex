@@ -1,7 +1,7 @@
 version: '2'
 services:
   docker:
-    image: nontan18/texlive:1.0.0
-    command: latexmk --pvc ./main.tex
+    image: paperist/alpine-texlive-ja
+    command: sh -c 'uplatex ./main.tex && dvipdfmx ./main.dvi'
     volumes:
-      - .:/root/work
+      - .:/workdir
